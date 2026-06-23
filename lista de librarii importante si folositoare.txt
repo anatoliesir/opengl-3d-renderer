@@ -1,0 +1,8 @@
+1. Cmake
+2. GLFW
+3. Glad
+4. stb(pentru implementarea imaginilor mai usor)
+
+
+TUtorial de setare a proiectelor OpenGL:
+https://www.youtube.com/watch?v=XpBGwZNyUh0&list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-&index=1
