@@ -124,10 +124,9 @@ int main() {
 	
 
 	// -----Texture------	
-	string parentDir = fs::current_path().parent_path().string();
-	string texPath = "/Resources/OpenGLProiect/";
+	string texPath = "Resources/";
 
-	Texture texture((parentDir + texPath + "Image1080x1095.png").c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_UNSIGNED_BYTE);
+	Texture texture((texPath + "Image1080x1095.png").c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_UNSIGNED_BYTE);
 
 
 	// Conextez uniform la textura si in acelasi timp activez shaderProgram pentru conectarea acestuia
