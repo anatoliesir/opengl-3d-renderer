@@ -8,4 +8,4 @@ A - left;\
 D - right;\
 Space - up;\
 Control - down;\
-Moving mouse with right click - ability to look around.
+Moving mouse with left mouse click - ability to look around.
