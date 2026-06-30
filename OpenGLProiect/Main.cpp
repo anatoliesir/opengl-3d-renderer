@@ -8,6 +8,8 @@ namespace fs = std::filesystem;
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
 #include<glm/gtc/type_ptr.hpp>
+
+#include "errorReporting.h"
 using namespace std;
 
 #include"shaderClass.h"
@@ -94,6 +96,12 @@ int main() {
 	// Initializeaza OpenGL(OBLIGATORIE, daca nu atunci se va afisa eroare nullptr)
 	gladLoadGL();
 
+
+	// This is a customized debugger that gemini edited
+	enableReportGlErrors();
+
+
+
 	// Functie ce va retrimite informatii la OpenGL despre marimea ferestrei
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
@@ -133,6 +141,9 @@ int main() {
 
 	// Pornesc testul de adancime
 	glEnable(GL_DEPTH_TEST);
+
+	
+
 	// Loop ce tine fereastra in viata
 	while (!glfwWindowShouldClose(window)) {
 		// PREGATESC REDAREA OPENGL(preparing to render)

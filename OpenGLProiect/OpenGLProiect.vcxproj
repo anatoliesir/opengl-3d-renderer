@@ -78,6 +78,14 @@
     <IncludePath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\include;$(IncludePath)</IncludePath>
     <LibraryPath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Portofoliu personal la programare\OpenGL Projects\OpenGLProiect\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -100,10 +108,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -128,15 +139,19 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="EBO.cpp" />
+    <ClCompile Include="errorReporting.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="shaderClass.cpp" />
@@ -152,6 +167,7 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="EBO.h" />
+    <ClInclude Include="errorReporting.h" />
     <ClInclude Include="shaderClass.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="VAO.h" />

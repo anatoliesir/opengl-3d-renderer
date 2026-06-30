@@ -22,7 +22,7 @@ public:
 	int width, height;// Dimensiunile ferestrelor
 	bool firstClick = true;// Evita "sarituri" la primul click
 
-	float speed = 3.0f, sensitivity = 0.008f;// viteza camerei si sensibilitatea(sensibilitatea este grad/pixel)
+	float speed = 3.0f, sensitivity = 0.015f;// viteza camerei si sensibilitatea(sensibilitatea este grad/pixel)
 
 	// Variabila temporara pentru aflarea pozitiei cursorului din trecut
 	double mouseXTemp, mouseYTemp;
