@@ -16,3 +16,4 @@ To try my project, go to https://github.com/anatoliesir/opengl-3d-renderer/relea
 
 
 If Windows/Chrome marks it as a virus, it is a false positive because the executable is not digitally signed. You can verify the source code in this repository.
+Me myself tried to install it, and my windows antivirus flags it as trojan. I was scared, but then remembered that this is a C++ & C program that uses pointers to access memory, and that windows security detected it in memory and flagged it as trojan.
