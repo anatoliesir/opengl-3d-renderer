@@ -1,6 +1,8 @@
 # opengl-3d-renderer
 A passion project, where I challenged myself to fight the laziness and try to create something using the low level Graphics API. This project only includes a pyramid, on which is placed an image.
 
+<img width="300" height="300" alt="opengl-3d-renderer-GIF" src="https://github.com/user-attachments/assets/e90f24fe-3868-4289-a758-62099a9ff49e" />
+
 ## Controls:
 * W - forward;
 * S - backward;
@@ -21,5 +23,5 @@ If Windows/Chrome marks it as a virus, it is a false positive because the execut
 Me myself tried to install it, and my windows antivirus flags it as trojan. I was scared, but then remembered that this is a C++ & C program that uses pointers to access memory, and that windows security detected it in memory and flagged it as trojan.
 
 ## Learning Resources
-* [LearnOpenGL](https://learnopengl.com/Getting-started/Creating-a-window)
+* [LearnOpenGL](https://learnopengl.com/Getting-started/Creating-a-window) (Official Site)
 * [Youtube Playlist](https://www.youtube.com/watch?v=XpBGwZNyUh0&list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-) (Same learning steps, but shown more deeply)
